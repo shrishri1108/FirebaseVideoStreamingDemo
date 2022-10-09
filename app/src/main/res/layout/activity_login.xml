@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Login "
+        android:textStyle="bold|normal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="21sp"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@id/password_outer_lays"
+        style="@style/ThemeOverlay.Material3.TextInputEditText"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/et_email_login"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="enter your email address"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="17dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/ThemeOverlay.Material3.TextInputEditText"
+        android:id="@+id/password_outer_lays"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password_login"
+            android:hint="enter your password here"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:text=" Login"
+        android:paddingLeft="27dp"
+        android:layout_marginTop="19dp"
+        android:paddingRight="27dp"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@id/password_outer_lays"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_sign_in"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_new_user"
+        android:text=" New User ? "
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:background="#00f000f0"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="17dp"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
