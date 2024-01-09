@@ -12,7 +12,13 @@
     android:orientation="vertical"
     >
 
-
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        app:use_controller="true"
+        app:resize_mode="fill"
+        android:id="@+id/my_video_views"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

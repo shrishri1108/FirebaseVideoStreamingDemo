@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         loginBinding= ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(loginBinding.getRoot());
 
+        firebaseAuth= FirebaseAuth.getInstance();
 
         loginBinding.btnNewUser.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -27,6 +27,7 @@
         android:paddingBottom="17dp"
         android:paddingRight="27dp"
         android:paddingLeft="27dp"
+        android:textSize="17sp"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@+id/my_video_screen"
         />
@@ -53,8 +54,10 @@
         android:text=" Upload"
         android:paddingTop="17dp"
         android:paddingBottom="17dp"
+        android:textSize="17sp"
         android:layout_marginTop="17dp"
         android:paddingLeft="29dp"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:paddingRight="29dp"

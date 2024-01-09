@@ -77,6 +77,7 @@ public class addVideo extends AppCompatActivity {
         addVideoBinding.btnUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 processVideoUploading();
             }
         });
